@@ -11220,40 +11220,132 @@ function (_Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Prices, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
+      var list = '';
+      var bpi = this.props.bpi.bpi;
+
+      if (this.state.currency === 'USD') {
+        list = __jsx("li", {
+          className: "list-group-item",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          },
+          __self: this
+        }, "Bitcoin rate for ", bpi.USD.description, ": ", __jsx("span", {
+          className: "badge badge-primary",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          },
+          __self: this
+        }, bpi.USD.code), __jsx("strong", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
+          },
+          __self: this
+        }, bpi.USD.rate));
+      } else if (this.state.currency === 'GBP') {
+        list = __jsx("li", {
+          className: "list-group-item",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          },
+          __self: this
+        }, "Bitcoin rate for ", bpi.GBP.description, ": ", __jsx("span", {
+          className: "badge badge-primary",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          },
+          __self: this
+        }, bpi.GBP.code), __jsx("strong", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22
+          },
+          __self: this
+        }, bpi.GBP.rate));
+      } else if (this.state.currency === 'EUR') {
+        list = __jsx("li", {
+          className: "list-group-item",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          },
+          __self: this
+        }, "Bitcoin rate for ", bpi.EUR.description, ": ", __jsx("span", {
+          className: "badge badge-primary",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28
+          },
+          __self: this
+        }, bpi.EUR.code), __jsx("strong", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+          },
+          __self: this
+        }, bpi.EUR.rate));
+      }
+
       return __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 34
         },
         __self: this
       }, __jsx("ul", {
         className: "list-group",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 35
         },
         __self: this
-      }, __jsx("li", {
-        className: "list-group-item",
+      }, list), __jsx("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 36
         },
         __self: this
-      }, "Bitcoin rate for ", bpi.USD.description, ":", ' ', __jsx("span", {
-        className: "badge badge-primary",
+      }), __jsx("select", {
+        onChange: function onChange(e) {
+          return _this2.setState({
+            currency: e.target.value
+          });
+        },
+        className: "form-control",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 37
         },
         __self: this
-      }, bpi.USD.code), __jsx("strong", {
+      }, __jsx("option", {
+        value: "USD",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 38
         },
         __self: this
-      }, bpi.USD.rate))));
+      }, "USD"), __jsx("option", {
+        value: "GBP",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "GBP"), __jsx("option", {
+        value: "EUR",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, "EUR")));
     }
   }]);
 
