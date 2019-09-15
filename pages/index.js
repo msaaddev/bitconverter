@@ -1,20 +1,9 @@
-import Link from 'next/link';
+import NavBar from './components/NavBar';
 
 const Home = () => {
 	return (
 		<div>
-			<ul>
-				<li>
-					<Link href="/">
-						<a>Home</a>
-					</Link>
-				</li>
-				<li>
-					<Link href="/about">
-						<a>About</a>
-					</Link>
-				</li>
-			</ul>
+			<NavBar />
 			<h1>Hello! NextJS</h1>
 			<p>Application to view Bitcoin prices.</p>
 		</div>
