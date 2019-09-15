@@ -1,12 +1,13 @@
-import NavBar from './components/NavBar';
+import Layout from './components/Layout';
 
 const Home = () => {
 	return (
-		<div>
-			<NavBar />
-			<h1>Hello! NextJS</h1>
-			<p>Application to view Bitcoin prices.</p>
-		</div>
+		<Layout>
+			<div>
+				<h1>Hello! NextJS</h1>
+				<p>Application to view Bitcoin prices.</p>
+			</div>
+		</Layout>
 	);
 };
 

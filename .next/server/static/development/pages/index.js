@@ -758,6 +758,43 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
+/***/ "./pages/components/Layout.jsx":
+/*!*************************************!*\
+  !*** ./pages/components/Layout.jsx ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./pages/components/NavBar.jsx");
+var _jsxFileName = "C:\\Users\\Saad\\Documents\\GitHub\\BitzPrice\\pages\\components\\Layout.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Layout = props => {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: undefined
+  }, __jsx(_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }), props.children);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
 /***/ "./pages/components/NavBar.jsx":
 /*!*************************************!*\
   !*** ./pages/components/NavBar.jsx ***!
@@ -857,26 +894,26 @@ const NavBar = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar */ "./pages/components/NavBar.jsx");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Layout */ "./pages/components/Layout.jsx");
 var _jsxFileName = "C:\\Users\\Saad\\Documents\\GitHub\\BitzPrice\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Home = () => {
-  return __jsx("div", {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: undefined
-  }, __jsx(_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: undefined
-  }), __jsx("h1", {
+  }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -888,7 +925,7 @@ const Home = () => {
       lineNumber: 8
     },
     __self: undefined
-  }, "Application to view Bitcoin prices."));
+  }, "Application to view Bitcoin prices.")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
