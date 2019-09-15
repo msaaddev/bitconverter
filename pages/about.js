@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Home = () => {
+const About = () => {
 	return (
 		<div>
 			<ul>
@@ -15,10 +15,9 @@ const Home = () => {
 					</Link>
 				</li>
 			</ul>
-			<h1>Hello! NextJS</h1>
-			<p>Application to view Bitcoin prices.</p>
+			About BitzPrice
 		</div>
 	);
 };
 
-export default Home;
+export default About;
